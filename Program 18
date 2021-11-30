@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+
+union un
+{
+    int x;      
+    float y;  
+    char z[10]; 
+};
+
+
+int main()
+
+{
+    union un u1;
+
+    u1.x = 9;
+    u1.y = 2.5;
+    strcpy(u1.z, "Hello");
+    
+
+    printf("%d     %f     %s", u1.x, u1.y, u1.z);
+}
