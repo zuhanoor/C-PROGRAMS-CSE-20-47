@@ -5,8 +5,8 @@
  int main()
 
  {
-     char name;
+     char name[100];
      printf("ENTER YOUR NAME\n");
-     scanf("%c", &name);
-     printf("The name entered is %c \n",name);
+     scanf("%s", name);
+     printf("The name entered is %s \n",name);
          return 0;
