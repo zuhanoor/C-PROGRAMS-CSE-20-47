@@ -1,6 +1,6 @@
 int main()
 {
-    int a[10000],i,n,key;
+    int a[100],i,n,temp;
    
     printf("Enter size of the  array : ");
     scanf("%d", &n);
@@ -10,11 +10,11 @@ int main()
         scanf("%d",&a[i]);
     }
      printf("Enter the key : ");
-    scanf("%d", &key);
+    scanf("%d", &temp);
      
     for(i=0; i<n; i++)
     {
-        if(a[i]==key)
+        if(a[i]==temp)
         {
 			printf("element found ");
             return 0;		 
